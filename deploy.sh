@@ -2,7 +2,7 @@
 HUGO=hugo_0.10_linux_amd64
 if [ ! -f ./$HUGO ]; then
   wget -qO- --no-check-certificate https://github.com/spf13/hugo/releases/download/v0.10/$HUGO.tar.gz \
-  | tar -zxpv --strip-components=1 $HUGO/$HUGO
+  | tar -zxp --strip-components=1 $HUGO/$HUGO
 fi
 ./$HUGO
 rm -rf /tmp/static-arken.io
