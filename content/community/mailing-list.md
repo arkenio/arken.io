@@ -9,7 +9,7 @@ groups_weight: 10
 
 Arken has a google group for questions and discussions:
 
-https://groups.google.com/forum/#!forum/arken
+https://groups.google.com/forum/#!forum/arken-discuss
 
 ## Github Issues
 
