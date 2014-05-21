@@ -5,6 +5,7 @@
 .idea
 bin
 target
+public
 *~
 *~bak
 *-bak

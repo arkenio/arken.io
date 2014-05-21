@@ -12,6 +12,7 @@ git rm --cached -r .
 git clean -fd
 git commit -m"delete preexisting site"
 cp -r  /tmp/static-arken.io/* .
+echo arken.io >> CNAME
 git add *
 git commit -m"update static site"
 git push
