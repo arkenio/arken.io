@@ -6,4 +6,4 @@ groups: ["meta"]
 groups_weight: 50
 ---
 
-Arken is open sources and released under the apache license
+Arken is open sources and released under the Apache license.

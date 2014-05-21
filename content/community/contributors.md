@@ -7,4 +7,4 @@ groups_weight: 40
 notoc: true
 ---
 
-Arken is currently built by the team behinf the Nuxeo Platform.
+Arken is currently built by the team behind the Nuxeo Platform. Everyone is welcome to join the project!

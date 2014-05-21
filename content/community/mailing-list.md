@@ -7,14 +7,12 @@ groups_weight: 10
 
 ## Discussion
 
-Arken has a google group for questions and discussions:
-
-https://groups.google.com/forum/#!forum/arken-discuss
+Arken has a google group for questions and discussions: [https://groups.google.com/forum/#!forum/arken-discuss](https://groups.google.com/forum/#!forum/arken-discuss)
 
 ## Github Issues
 
-https://github.com/arkenio/arken/issues
+[https://github.com/arkenio/arken/issues](https://github.com/arkenio/arken/issues)
 
 ## Twitter
 
-You can follow arken development and announcement by following [@arken_io](https://twitter.com/arken_io).
+You can follow Arken development and announcement by following [@arken_io](https://twitter.com/arken_io).

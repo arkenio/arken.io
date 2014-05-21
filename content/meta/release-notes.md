@@ -7,5 +7,4 @@ groups_weight: 10
 ---
 
 ## **0.0.0** TBD
-  * It's comming
-  * soon
+  * It's comming, soon
