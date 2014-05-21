@@ -1,15 +1,14 @@
 #!/bin/sh
-if [ ! -f ./hugo ]; then
-  wget https://github.com/spf13/hugo/releases/download/v0.10/hugo_0.10_linux_amd64.tar.gz -O-| tar -xvf
-  mv ./hugo_0.10_linux_amd64/hugo_0.10_linux_amd64 ./hugo
-  rm -r hugo_0.10_linux_amd64/ hugo_0.10_linux_amd64.tar.gz
+HUGO=hugo_0.10_linux_amd64
+if [ ! -f ./$HUGO ]; then
+  wget -qO- --no-check-certificate https://github.com/spf13/hugo/releases/download/v0.10/$HUGO.tar.gz \
+  | tar -zxpv --strip-components=1 $HUGO/$HUGO
 fi
-./hugo
+./$HUGO
 rm -rf /tmp/static-arken.io
 mv public /tmp/static-arken.io
 git checkout -f gh-pages
-git rm --cached -r .
-git clean -fd
+git ls-files -z | xargs -0 rm -f
 cp -r /tmp/static-arken.io/* .
 echo arken.io >> CNAME
 git add -A
