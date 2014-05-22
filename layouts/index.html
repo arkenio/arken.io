@@ -113,38 +113,20 @@
         </div>
     </section>
 
-    <section id="architecture" class="container content-section">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+    <section id="architecture" class="content-section text-center">
+        <div class="container">
                 <h2>Architecture</h2>
-              <div class="container">
-                <div class="col-lg-10 col-lg-offset-2">
                 <h3>Service Model</h3>
                 <p>Via a simple descriptor package that defines docker image deployed as well as resources (S3 bucket, database instance, ...) and services required, the Arken cluster provisions the image and run it on one of the underlying CoreOS instances that are smartly synchronised and aware one of the others thanks to a communication based on Fleet and etcd.</p>
-                </div>
-              </div>
-              <div class="container">
-                <div class="col-lg-10 col-lg-offset-2">
                     <h3>Simple</h3>
                 <p>Approach highly simple: build an image and it is deployable. Simpler than paas traditional build packs.</p>
-                </div>
-              </div>
-              <div class="container">
-                <div class="col-lg-10 col-lg-offset-2">
                     <h3>Lightweight</h3>
                 <p>Much more agile than Virtual Machine based virtualization infrastucture, thanks to Docker containers that uses less resources.</p>
                 </div>
               </div>
-              <div class="container">
-                <div class="col-lg-10 col-lg-offset-2">
                     <h3>Resilience</h3>
                 <p> Focused on resilience: Core OS restarts if it detects one is down.</p>
-                </div>
-              </div>
-            </div>
-              <div class="container text-center" >
                 <a href="/doc/introduction" class="btn btn-default btn-lg">Learn More</a>
-              </div>
               <br />
         </div>
     </section>
