@@ -5,10 +5,10 @@ if [ ! -f ./$HUGO ]; then
   | tar -zxp --strip-components=1 $HUGO/$HUGO
 fi
 ./$HUGO
-git pull
 rm -rf /tmp/static-arken.io
 mv public /tmp/static-arken.io
 git checkout -f gh-pages
+git pull
 git ls-files -z | xargs -0 rm -f
 cp -r /tmp/static-arken.io/* .
 echo arken.io >> CNAME
