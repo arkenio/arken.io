@@ -5,6 +5,7 @@ if [ ! -f ./$HUGO ]; then
   | tar -zxp --strip-components=1 $HUGO/$HUGO
 fi
 ./$HUGO
+git pull
 rm -rf /tmp/static-arken.io
 mv public /tmp/static-arken.io
 git checkout -f gh-pages
