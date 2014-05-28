@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Arken Cluster Orchestrator based on CoreOS</title>
+    {{ template "chrome/includes.html" . }}
+  </head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+ <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                  Arken
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#overview">Overview</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#architecture">Architecture</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#community">Community</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/doc/introduction">Documentation</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="http://github.com/arkenio/arken">Github <i class="fa fa-github fa-fw"></i></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="http://nuxeo.io">Try</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Arken</h1>
+                        <p class="intro-text">Everybody needs a cluster orchestrator. You might not know it yet. But you do.</p>
+                        <div class="page-scroll">
+                            <a href="#about" class="btn btn-circle">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Arken</h2>
+                <p>Arken is a <em>simple</em>, <em>fast</em> cluster orchestrator.</p>
+                <p>Arken is completely <em>agnostic</em>. It runs anything, anywere.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="color:black;background-color:white"  id="overview" class="content-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <h2>Simple</h2>
+                <p>If you are already on the Docker world, you know that the ecosystem is very young and dynamic. Things tends to become complicated quite fast because of those many different projects that also have many features in common. Arken will abstract this complexity by providing an <em>opiniated</em> way of running cluster of Docker images thanks to CoreOS, Fleet and GoGeta.</p>
+                </div>
+              </div>
+              <div class="container">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <h2>Scale</h2>
+                <p>A common issue people face with Cloud infrastructure these days is scaling up AND down. Scaling up and down is not easy when you did not built your infrastructure with this in mind from the start. Arken uses GoGeta, a dynamic reverse proxy based on etcd, to turn your containers on and off depending on the load.</p>
+                </div>
+              </div>
+              <div class="container">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <h2>Agnostic</h2>
+                <p>As things changes very quicly in this world, Arken has been made as agnostic as possible. It's goal it to run on anything. Bare Metal, Amazon, vagrant machines, you name it. And as it uses Docker containers, it can run absolutely anything. This makes Arken one of the most agnostic cluster orchestrator.</p>
+                </div>
+              </div>
+              <div class="container text-center" >
+                <a href="/doc/introduction" class="btn btn-default btn-lg">Learn More</a>
+              </div>
+              <br />
+        </div>
+    </section>
+
+    <section id="architecture" class="content-section text-center">
+        <div class="container">
+                <h2>Architecture</h2>
+                <h3>Service Model</h3>
+                <p>Via a simple descriptor package that defines docker image deployed as well as resources (S3 bucket, database instance, ...) and services required, the Arken cluster provisions the image and run it on one of the underlying CoreOS instances that are smartly synchronised and aware one of the others thanks to a communication based on Fleet and etcd.</p>
+                    <h3>Simple</h3>
+                <p>Approach highly simple: build an image and it is deployable. Simpler than paas traditional build packs.</p>
+                    <h3>Lightweight</h3>
+                <p>Much more agile than Virtual Machine based virtualization infrastucture, thanks to Docker containers that uses less resources.</p>
+                </div>
+              </div>
+                    <h3>Resilience</h3>
+                <p> Focused on resilience: Core OS restarts if it detects one is down.</p>
+                <a href="/doc/introduction" class="btn btn-default btn-lg">Learn More</a>
+              <br />
+        </div>
+    </section>
+
+
+    <section id="community" style="color:black;background-color:white"  class="content-section text-center">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Join the Community</h2>
+                <p>Subscribe to our <a href="https://groups.google.com/forum/#!forum/arken-discuss">Google Group</a></p>
+                <p>Ask and Anwser questions on StackOverflow</p>
+                <ul class="list-inline banner-social-buttons">
+                    <li><a href="https://twitter.com/arkenio" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li><a href="https://github.com/arkenio" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    {{ template "chrome/footer.html" . }}
+
+    <script src="/js/grayscale.js"></script>

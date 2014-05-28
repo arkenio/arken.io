@@ -33,6 +33,9 @@ body {
   }
 }
 
+.overview  >div {
+    background-color: white;
+}
 
 #toc {
     float: right;
