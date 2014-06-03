@@ -14,4 +14,4 @@ Arken is a cluster orchestrator.
 
  * [Quick start](/overview/quickstart)
  * [Join the Mailing List](/community/mailing-list)
- * [Star us on Github](http://github.com/arkenio/arken/)
+ * [Star us on Github](http://github.com/arkenio/)
