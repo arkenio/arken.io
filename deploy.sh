@@ -14,5 +14,5 @@ cp -r /tmp/static-arken.io/* .
 echo arken.io >> CNAME
 git add -A
 git commit -m"Build: ${BUILD_NUMBER} update static site"
-git push -f origin gh-pages
+git push origin gh-pages
 rm -rf /tmp/static-arken.io
